@@ -10,7 +10,7 @@ const SOCIAL_PROFILES = [
   },
   {
     id: 2,
-    link: 'linkedin.com/in/thien-an-tran-ba8296172',
+    link: 'https://linkedin.com/in/thien-an-tran-ba8296172',
     image: linkedIcon,
   },
 
