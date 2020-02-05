@@ -15,7 +15,8 @@ class App extends Component {
 
   render() {
     return(
-      <div>
+      <div class="container">
+
         <h1>Hello!</h1>
         <p>My name is Thien An Tran. I am a golden-rookie software engineer from Vietnam 🇻🇳.</p>
         <p>I'm always looking forward to <span style={{fontWeight: 600}}>meaningful</span> and <span style={{fontWeight: 600}}>beautiful</span> projects.</p>

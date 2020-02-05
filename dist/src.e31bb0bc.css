@@ -1,0 +1,33 @@
+.container [data-theme='dark'] {
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #3694FF;
+    --color-text: #B5B5B5;
+}
+
+.container {
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  font-size: 22px;
+  padding: 2.5%;
+  color: #001B3A;
+		--color-headings: #3694FF;
+}
+h1, h2 , h3, h4, h5 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+a:link {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+.bio {
+  padding-left: 30%;
+  text-align: left;
+}
+
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
