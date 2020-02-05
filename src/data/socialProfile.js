@@ -2,19 +2,15 @@ import emailIcon from '../asset/paper-plane.svg';
 import githubIcon from '../asset/github.svg';
 import linkedIcon from '../asset/linkedin.svg';
 
-const SOCIAL_PROFILES = [{
-    id: 1,
-    link: 'tranthie04@gmail.com',
-    image: emailIcon,
-  },
+const SOCIAL_PROFILES = [
   {
-    id: 2,
+    id: 1,
     link: 'https://github.com/mrred243',
     image: githubIcon,
   },
   {
-    id: 3,
-    link: '',
+    id: 2,
+    link: 'linkedin.com/in/thien-an-tran-ba8296172',
     image: linkedIcon,
   },
 

@@ -17,15 +17,24 @@ class App extends Component {
     return(
       <div>
         <h1>Hello!</h1>
-        <p>My name is Thien An. I am a golden-rookie software engineer from Vietnam 🇻🇳.</p>
-        <p>I'm always looking forward to meaningful and beautiful projects.</p>
+        <p>My name is Thien An Tran. I am a golden-rookie software engineer from Vietnam 🇻🇳.</p>
+        <p>I'm always looking forward to <span style={{fontWeight: 600}}>meaningful</span> and <span style={{fontWeight: 600}}>beautiful</span> projects.</p>
+          <p>I live in Helsinki, Finland now.</p>
+
         { this.state.displayBio ?
           (<div>
-            <p>I live in Helsinki.</p>
-            <p>My favorite language is Javascript and I think React is awesome.</p>
-            <p>Besides coding, I also love movies and all of food in the world.</p>
-            <button onClick={this.toggleBio}>Show less</button>
-          </div>) : (<button onClick={this.toggleBio}>Read more</button>) }
+            <p>Besides coding, I also love movies, football and all of food in the world.</p>
+            <br />
+            <div className="bio">
+              <p><b>Occupation:</b> Student</p>
+              <p><b>Current University:</b> Haaga-Helia University of Applied Sciences</p>
+              <p><b>Skill: </b> JavaScript, Reactjs, MySQL, HTML, CSS and basic Nodejs, Java, Springboot</p>
+            </div>
+
+
+
+            <button onClick={this.toggleBio}>Thank you! ❤️</button>
+          </div>) : (<button onClick={this.toggleBio}>Please click me! 👻</button>) }
 
           <hr />
           <Projects />

@@ -15,7 +15,7 @@ class SocialProfile extends Component {
 class SocialProfiles extends Component {
   render() {
     return (
-      <div>
+      <div style={{fontSize: '20px'}}>
         <h2>Connect with me</h2>
         <div>
           {
@@ -24,6 +24,8 @@ class SocialProfiles extends Component {
             }
               )
           }
+          <p><b>Email:</b> tranthie04@gmail.com</p>
+          <p><b>Phone:</b> +358 45 7872 5818</p>
         </div>
       </div>
       )
