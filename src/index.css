@@ -15,7 +15,10 @@ body {
   font-size: 22px;
   padding: 2.5%;
   color: #001B3A;
+<<<<<<< HEAD
 		--color-headings: #3694FF;
+=======
+>>>>>>> 4480015b8e18ce214ff05552c1a2ab840de1bdec
 }
 h1, h2 , h3, h4, h5 {
   font-family: 'Source Serif Pro', serif;

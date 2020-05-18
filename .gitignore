@@ -1,5 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Dependency directories
+/dist
+/yarn.lock
+
+# Optional cache
+.cache
+
 # dependencies
 /node_modules
 /.pnp
@@ -21,11 +28,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Dependency directories
-dist/
-node_modules/
-yarn.lock
-
-# Optional cache
-.cache
