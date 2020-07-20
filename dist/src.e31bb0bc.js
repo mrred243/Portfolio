@@ -9992,7 +9992,7 @@ if ("development" !== "production") {
       }
 
       var eventName = 'on' + eventNameSuffix;
-      var isSupported = eventName in document;
+      var isSupported = (eventName in document);
 
       if (!isSupported) {
         var element = document.createElement('div');
@@ -31732,10 +31732,12 @@ if ("development" === 'production') {
 }
 },{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"asset/pj1.jpg":[function(require,module,exports) {
 module.exports = "/pj1.abc6b865.jpg";
-},{}],"asset/pj2.png":[function(require,module,exports) {
-module.exports = "/pj2.87bdae57.png";
+},{}],"asset/pj2.jpg":[function(require,module,exports) {
+module.exports = "/pj2.8998fe5f.jpg";
 },{}],"asset/pj3.jpg":[function(require,module,exports) {
 module.exports = "/pj3.b1ca54cd.jpg";
+},{}],"asset/pj4.jpg":[function(require,module,exports) {
+module.exports = "/pj4.bd7a7867.jpg";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -31746,35 +31748,46 @@ exports.default = void 0;
 
 var _pj = _interopRequireDefault(require("../asset/pj1.jpg"));
 
-var _pj2 = _interopRequireDefault(require("../asset/pj2.png"));
+var _pj2 = _interopRequireDefault(require("../asset/pj2.jpg"));
 
 var _pj3 = _interopRequireDefault(require("../asset/pj3.jpg"));
+
+var _pj4 = _interopRequireDefault(require("../asset/pj4.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var PROJECTS = [{
   id: 1,
   title: 'Training Management Webpage',
-  description: 'A web allows users to review, manage their training schedule by React, React Router',
+  description: 'A web allows users to review, manage their training schedule.',
+  technology: 'React, React Router',
   link: 'https://trainingweb.netlify.com/',
   image: _pj.default
 }, {
   id: 2,
-  title: 'Spring Boot',
-  description: 'Small exercises with Springboot and Java',
-  link: 'https://github.com/mrred243/Server-Programming-Weekly-Exercise',
+  title: 'Spring Boot web',
+  description: 'A gym planner web with Springboot backend (username: admin, pw: admin)',
+  technology: 'Java, Springboot, MariaDB, Bootstrap',
+  link: 'https://gymplanner243.herokuapp.com',
   image: _pj2.default
-} // {
-//   id: 3,
-//   title: 'Project 3',
-//   description: 'Build Project 3',
-//   link: '',
-//   image: pj3
-// }
-];
+}, {
+  id: 3,
+  title: 'Music Mobile App',
+  description: 'Music Mobile App inspired by Spotify',
+  technology: 'React Native, third-party libraries',
+  link: 'https://github.com/mrred243/Favorite-Artists-App',
+  image: _pj3.default
+}, {
+  id: 4,
+  title: 'Odd or Even',
+  description: 'A card game on web which was build by React and Redux',
+  technology: 'React, Redux',
+  link: 'https://oddorevengame.netlify.app/',
+  image: _pj4.default
+}];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../asset/pj1.jpg":"asset/pj1.jpg","../asset/pj2.png":"asset/pj2.png","../asset/pj3.jpg":"asset/pj3.jpg"}],"Projects.js":[function(require,module,exports) {
+},{"../asset/pj1.jpg":"asset/pj1.jpg","../asset/pj2.jpg":"asset/pj2.jpg","../asset/pj3.jpg":"asset/pj3.jpg","../asset/pj4.jpg":"asset/pj4.jpg"}],"Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31800,25 +31813,29 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var Project =
-/*#__PURE__*/
-function (_Component) {
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Project = /*#__PURE__*/function (_Component) {
   _inherits(Project, _Component);
+
+  var _super = _createSuper(Project);
 
   function Project() {
     _classCallCheck(this, Project);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Project).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(Project, [{
@@ -31828,46 +31845,58 @@ function (_Component) {
           title = _this$props$project.title,
           image = _this$props$project.image,
           description = _this$props$project.description,
-          link = _this$props$project.link;
-      return _react.default.createElement("div", {
-        style: {
-          display: 'inline-block',
-          width: 400,
-          margin: 10
-        }
-      }, _react.default.createElement("a", {
-        href: link
-      }, _react.default.createElement("h4", null, title), _react.default.createElement("img", {
+          link = _this$props$project.link,
+          id = _this$props$project.id,
+          technology = _this$props$project.technology;
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: id % 2 == 0 ? "portfolio--item even" : "portfolio--item odd"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "img--portfolio"
+      }, /*#__PURE__*/_react.default.createElement("img", {
         src: image,
-        alt: "profile",
         style: {
-          width: 200,
-          height: 120,
-          margin: '10px 0px 10px 0px'
+          opacity: 0.7
         }
-      })), _react.default.createElement("p", null, description));
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        className: "content--portfolio"
+      }, /*#__PURE__*/_react.default.createElement("h3", {
+        className: "title--portfolio"
+      }, title), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("strong", null, "Technology:  "), technology), /*#__PURE__*/_react.default.createElement("form", {
+        action: link
+      }, /*#__PURE__*/_react.default.createElement("input", {
+        className: "preview--btn",
+        type: "submit",
+        value: "Preview \uD83C\uDF8F"
+      }))));
     }
   }]);
 
   return Project;
 }(_react.Component);
 
-var Projects =
-/*#__PURE__*/
-function (_Component2) {
+var Projects = /*#__PURE__*/function (_Component2) {
   _inherits(Projects, _Component2);
+
+  var _super2 = _createSuper(Projects);
 
   function Projects() {
     _classCallCheck(this, Projects);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Projects).apply(this, arguments));
+    return _super2.apply(this, arguments);
   }
 
   _createClass(Projects, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Highlighted Projects"), _react.default.createElement("div", null, _projects.default.map(function (PROJECT) {
-        return _react.default.createElement(Project, {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "project",
+        id: "project"
+      }, /*#__PURE__*/_react.default.createElement("h2", {
+        className: "title title--project"
+      }, "Featured Projects"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "portfolio"
+      }, _projects.default.map(function (PROJECT) {
+        return /*#__PURE__*/_react.default.createElement(Project, {
           key: PROJECT.id,
           project: PROJECT
         });
@@ -31939,25 +31968,29 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var SocialProfile =
-/*#__PURE__*/
-function (_Component) {
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var SocialProfile = /*#__PURE__*/function (_Component) {
   _inherits(SocialProfile, _Component);
+
+  var _super = _createSuper(SocialProfile);
 
   function SocialProfile() {
     _classCallCheck(this, SocialProfile);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SocialProfile).apply(this, arguments));
+    return _super.apply(this, arguments);
   }
 
   _createClass(SocialProfile, [{
@@ -31966,9 +31999,9 @@ function (_Component) {
       var _this$props$socialPro = this.props.socialProfile,
           link = _this$props$socialPro.link,
           image = _this$props$socialPro.image;
-      return _react.default.createElement("span", null, _react.default.createElement("a", {
+      return /*#__PURE__*/_react.default.createElement("span", null, /*#__PURE__*/_react.default.createElement("a", {
         href: link
-      }, _react.default.createElement("img", {
+      }, /*#__PURE__*/_react.default.createElement("img", {
         src: image,
         alt: "social-profile",
         style: {
@@ -31983,30 +32016,42 @@ function (_Component) {
   return SocialProfile;
 }(_react.Component);
 
-var SocialProfiles =
-/*#__PURE__*/
-function (_Component2) {
+var SocialProfiles = /*#__PURE__*/function (_Component2) {
   _inherits(SocialProfiles, _Component2);
+
+  var _super2 = _createSuper(SocialProfiles);
 
   function SocialProfiles() {
     _classCallCheck(this, SocialProfiles);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SocialProfiles).apply(this, arguments));
+    return _super2.apply(this, arguments);
   }
 
   _createClass(SocialProfiles, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "contact",
+        id: "contact",
         style: {
           fontSize: '20px'
         }
-      }, _react.default.createElement("h2", null, "Connect with me"), _react.default.createElement("div", null, _socialProfile.default.map(function (SOCIAL_PROFILE) {
-        return _react.default.createElement(SocialProfile, {
+      }, /*#__PURE__*/_react.default.createElement("h2", null, "Connect with me"), /*#__PURE__*/_react.default.createElement("div", {
+        className: "contact--section"
+      }, /*#__PURE__*/_react.default.createElement("iframe", {
+        src: "https://giphy.com/embed/WNPtFzVXA8fi8",
+        width: "350",
+        height: "200",
+        frameBorder: "0",
+        className: "giphy-embed"
+      }), /*#__PURE__*/_react.default.createElement("div", {
+        className: "contact--details"
+      }, _socialProfile.default.map(function (SOCIAL_PROFILE) {
+        return /*#__PURE__*/_react.default.createElement(SocialProfile, {
           key: SOCIAL_PROFILE.id,
           socialProfile: SOCIAL_PROFILE
         });
-      }), _react.default.createElement("p", null, _react.default.createElement("b", null, "Email:"), " tranthie04@gmail.com"), _react.default.createElement("p", null, _react.default.createElement("b", null, "Phone:"), " +358 45 7872 5818")));
+      }), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("b", null, "Email:"), " tranthie04@gmail.com", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("b", null, "Phone:"), " +358 45 7872 5818"))));
     }
   }]);
 
@@ -32015,7 +32060,98 @@ function (_Component2) {
 
 var _default = SocialProfiles;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./data/socialProfile.js":"data/socialProfile.js"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./data/socialProfile.js":"data/socialProfile.js"}],"asset/an1.jpeg":[function(require,module,exports) {
+module.exports = "/an1.671d7be4.jpeg";
+},{}],"asset/drawBlack.png":[function(require,module,exports) {
+module.exports = "/drawBlack.29f13c02.png";
+},{}],"Header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _drawBlack = _interopRequireDefault(require("./asset/drawBlack.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+var Header = function Header() {
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      navOpen = _useState2[0],
+      setNavOpen = _useState2[1];
+
+  var toggleNav = function toggleNav() {
+    setNavOpen(!navOpen);
+    console.log(navOpen);
+  };
+
+  return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "logo"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _drawBlack.default,
+    alt: "logo"
+  })), /*#__PURE__*/_react.default.createElement("button", {
+    className: navOpen ? "nav-toggle nav__open" : "nav-toggle",
+    onClick: toggleNav,
+    "aria-lable": "toggle navigation"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: navOpen ? "hamburger nav__open" : "hamburger"
+  })), /*#__PURE__*/_react.default.createElement("nav", {
+    className: navOpen ? "nav nav__open" : "nav"
+  }, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "nav__list"
+  }, /*#__PURE__*/_react.default.createElement("li", {
+    className: "nav__item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    onClick: toggleNav,
+    href: "#intro",
+    className: "nav__link"
+  }, "Home")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "nav__item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    onClick: toggleNav,
+    href: "#about",
+    className: "nav__link"
+  }, "About")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "nav__item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    onClick: toggleNav,
+    href: "#project",
+    className: "nav__link"
+  }, "Projects")), /*#__PURE__*/_react.default.createElement("li", {
+    className: "nav__item"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    onClick: toggleNav,
+    href: "#contact",
+    className: "nav__link"
+  }, "Contact")))));
+};
+
+var _default = Header;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./asset/drawBlack.png":"asset/drawBlack.png"}],"asset/about.jpg":[function(require,module,exports) {
+module.exports = "/about.8b9e96cc.jpg";
+},{}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32029,84 +32165,57 @@ var _Projects = _interopRequireDefault(require("./Projects"));
 
 var _SocialProfiles = _interopRequireDefault(require("./SocialProfiles"));
 
+var _an = _interopRequireDefault(require("./asset/an1.jpeg"));
+
+var _Header = _interopRequireDefault(require("./Header"));
+
+var _about = _interopRequireDefault(require("./asset/about.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var App =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(App, _Component);
-
-  function App() {
-    var _this;
-
-    _classCallCheck(this, App);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this));
-    _this.state = {
-      displayBio: false
-    };
-    _this.toggleBio = _this.toggleBio.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(App, [{
-    key: "toggleBio",
-    value: function toggleBio() {
-      this.setState({
-        displayBio: !this.state.displayBio
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", {
-        class: "container"
-      }, _react.default.createElement("h1", null, "Hello!"), _react.default.createElement("p", null, "My name is Thien An Tran. I am a golden-rookie software engineer from Vietnam \uD83C\uDDFB\uD83C\uDDF3."), _react.default.createElement("p", null, "I'm always looking forward to ", _react.default.createElement("span", {
-        style: {
-          fontWeight: 600
-        }
-      }, "meaningful"), " and ", _react.default.createElement("span", {
-        style: {
-          fontWeight: 600
-        }
-      }, "beautiful"), " projects."), _react.default.createElement("p", null, "I live in Helsinki, Finland now."), this.state.displayBio ? _react.default.createElement("div", null, _react.default.createElement("p", null, "Besides coding, I also love movies, football and all of food in the world."), _react.default.createElement("br", null), _react.default.createElement("div", {
-        className: "bio"
-      }, _react.default.createElement("p", null, _react.default.createElement("b", null, "Occupation:"), " Student"), _react.default.createElement("p", null, _react.default.createElement("b", null, "Current University:"), " Haaga-Helia University of Applied Sciences"), _react.default.createElement("p", null, _react.default.createElement("b", null, "Skill: "), " JavaScript, Reactjs, MySQL, HTML, CSS and basic Nodejs, Java, Springboot")), _react.default.createElement("button", {
-        onClick: this.toggleBio
-      }, "Thank you! \u2764\uFE0F")) : _react.default.createElement("button", {
-        onClick: this.toggleBio
-      }, "Please click me! \uD83D\uDC7B"), _react.default.createElement("hr", null), _react.default.createElement(_Projects.default, null), _react.default.createElement("hr", null), _react.default.createElement(_SocialProfiles.default, null));
-    }
-  }]);
-
-  return App;
-}(_react.Component);
+var App = function App() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "intro",
+    id: "intro"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "title title--intro"
+  }, "Hi, I am ", /*#__PURE__*/_react.default.createElement("strong", null, "Thien An Tran")), /*#__PURE__*/_react.default.createElement("h3", {
+    className: "subtitle subtitle--intro"
+  }, "A golden-rookie front-end dev from \uD83C\uDDFB\uD83C\uDDF3"), /*#__PURE__*/_react.default.createElement("img", {
+    className: "img--intro",
+    src: _an.default,
+    alt: ""
+  })), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about",
+    id: "about"
+  }, /*#__PURE__*/_react.default.createElement("h2", {
+    className: "title title--about"
+  }, "About me"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("div", {
+    className: "about--content"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "img--about"
+  }), /*#__PURE__*/_react.default.createElement("p", {
+    className: "subtitle subtitle--about"
+  }, "Hello, I am ", /*#__PURE__*/_react.default.createElement("strong", null, "Thien An Tran"), ", a foreign student from Vietnam. I am studying ", /*#__PURE__*/_react.default.createElement("strong", null, "Business and Information Technology"), " at ", /*#__PURE__*/_react.default.createElement("strong", null, "Haaga-Helia University"), " in Helsinki, Finland.", /*#__PURE__*/_react.default.createElement("br", null), "I am especially interested in ", /*#__PURE__*/_react.default.createElement("strong", null, "meaningful"), " and ", /*#__PURE__*/_react.default.createElement("strong", null, "aesthetic"), " projects."), /*#__PURE__*/_react.default.createElement("div", {
+    className: "specialty"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "strength--main"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "specialty--item"
+  }, "Main Strength"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "HTML"), /*#__PURE__*/_react.default.createElement("li", null, "CSS"), /*#__PURE__*/_react.default.createElement("li", null, "JavaScript"), /*#__PURE__*/_react.default.createElement("li", null, "React"), /*#__PURE__*/_react.default.createElement("li", null, "Redux"), /*#__PURE__*/_react.default.createElement("li", null, "React Native"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "strength--other"
+  }, /*#__PURE__*/_react.default.createElement("h3", {
+    className: "specialty--item"
+  }, "Others"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Java"), /*#__PURE__*/_react.default.createElement("li", null, "Node.js"), /*#__PURE__*/_react.default.createElement("li", null, "SQL"), /*#__PURE__*/_react.default.createElement("li", null, "Vue"), /*#__PURE__*/_react.default.createElement("li", null, "MariaDB + MongoDB"), /*#__PURE__*/_react.default.createElement("li", null, "Springboot"), /*#__PURE__*/_react.default.createElement("li", null, "Express"), /*#__PURE__*/_react.default.createElement("li", null, "WordPress")))))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null));
+};
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Projects":"Projects.js","./SocialProfiles":"SocialProfiles.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Projects":"Projects.js","./SocialProfiles":"SocialProfiles.js","./asset/an1.jpeg":"asset/an1.jpeg","./Header":"Header.js","./asset/about.jpg":"asset/about.jpg"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -32178,7 +32287,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./asset/about.jpg":[["about.8b9e96cc.jpg","asset/about.jpg"],"asset/about.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32191,7 +32300,7 @@ require("./index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement(_App.default, null), document.getElementById('root'));
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./App.js":"App.js","./index.css":"index.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -32220,7 +32329,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49738" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61729" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

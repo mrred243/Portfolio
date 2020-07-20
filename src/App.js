@@ -1,41 +1,64 @@
 import React, {Component} from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import an from './asset/an1.jpeg';
+import Header from './Header';
+import about from './asset/about.jpg';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {displayBio: false};
-    this.toggleBio = this.toggleBio.bind(this);
-  };
+const App = () => {
 
-  toggleBio() {
-    this.setState({displayBio : !this.state.displayBio});
-  };
 
-  render() {
+
     return(
-      <div class="container">
+      <div>
+        <Header />
 
-        <h1>Hello!</h1>
-        <p>My name is Thien An Tran. I am a golden-rookie software engineer from Vietnam 🇻🇳.</p>
-        <p>I'm always looking forward to <span style={{fontWeight: 600}}>meaningful</span> and <span style={{fontWeight: 600}}>beautiful</span> projects.</p>
-          <p>I live in Helsinki, Finland now.</p>
+        <div className="intro" id="intro">
+          <h1 className="title title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
+          <h3 className="subtitle subtitle--intro">A golden-rookie front-end dev from 🇻🇳</h3>
+          <img className="img--intro" src={an} alt="" />
+        </div>
 
-        { this.state.displayBio ?
-          (<div>
-            <p>Besides coding, I also love movies, football and all of food in the world.</p>
-            <br />
-            <div className="bio">
-              <p><b>Occupation:</b> Student</p>
-              <p><b>Current University:</b> Haaga-Helia University of Applied Sciences</p>
-              <p><b>Skill: </b> JavaScript, Reactjs, MySQL, HTML, CSS and basic Nodejs, Java, Springboot</p>
+
+        <hr />
+          <div className="about" id="about">
+          <h2 className="title title--about">About me</h2><br/>
+          <div className="about--content">
+            <div className="img--about"></div>
+            <p className="subtitle subtitle--about">Hello, I am <strong>Thien An Tran</strong>, a foreign student from Vietnam. I am studying <strong>Business and Information Technology</strong> at <strong>Haaga-Helia University</strong> in Helsinki, Finland.<br/>
+            I am especially interested in <strong>meaningful</strong> and <strong>aesthetic</strong> projects.
+            </p>
+            <div className="specialty">
+              <div className="strength--main">
+                  <h3 className="specialty--item">Main Strength</h3>
+                  <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                      <li>React</li>
+                      <li>Redux</li>
+                      <li>React Native</li>
+                  </ul>
+              </div>
+              <div className="strength--other">
+                  <h3 className="specialty--item">Others</h3>
+                  <ul>
+                      <li>Java</li>
+                      <li>Node.js</li>
+                      <li>SQL</li>
+                      <li>Vue</li>
+                      <li>MariaDB + MongoDB</li>
+                      <li>Springboot</li>
+                      <li>Express</li>
+                      <li>WordPress</li>
+                  </ul>
+              </div>
             </div>
+          </div>
 
 
+          </div>
 
-            <button onClick={this.toggleBio}>Thank you! ❤️</button>
-          </div>) : (<button onClick={this.toggleBio}>Please click me! 👻</button>) }
 
           <hr />
           <Projects />
@@ -44,7 +67,6 @@ class App extends Component {
           <SocialProfiles />
         </div>
       )
-    }
   }
 
   export default App;

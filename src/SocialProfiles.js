@@ -15,18 +15,21 @@ class SocialProfile extends Component {
 class SocialProfiles extends Component {
   render() {
     return (
-      <div style={{fontSize: '20px'}}>
+      <div className="contact" id="contact" style={{fontSize: '20px'}}>
         <h2>Connect with me</h2>
-        <div>
-          {
-            SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
-              return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE} />
+        <div className="contact--section">
+          <iframe src="https://giphy.com/embed/WNPtFzVXA8fi8" width="350" height="200" frameBorder="0" className="giphy-embed"></iframe>
+          <div className="contact--details">
+            {
+              SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
+                return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE} />
+              }
+                )
             }
-              )
-          }
-          <p><b>Email:</b> tranthie04@gmail.com</p>
-          <p><b>Phone:</b> +358 45 7872 5818</p>
+            <p><b>Email:</b> tranthie04@gmail.com<br/><b>Phone:</b> +358 45 7872 5818</p>
+          </div>
         </div>
+
       </div>
       )
   }

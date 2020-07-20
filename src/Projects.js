@@ -4,22 +4,35 @@ import PROJECTS from './data/projects';
 
 class Project extends Component {
   render() {
-    const { title, image, description, link } = this.props.project;
+    const { title, image, description, link, id, technology } = this.props.project;
     return(
-      <div style={{display: 'inline-block', width: 400, margin: 10 }}>
-        <a href={link}><h4>{title}</h4>
-        <img src= {image} alt='profile' style={{ width: 200, height: 120, margin: '10px 0px 10px 0px'}} /></a>
-        <p>{description}</p>
-      </div>
+
+        <div className={ id % 2 == 0 ? "portfolio--item even" : "portfolio--item odd" }>
+
+          <div className="img--portfolio">
+              <img src={image} style={{ opacity: 0.7 }} />
+          </div>
+
+          <div className="content--portfolio">
+              <h3 className="title--portfolio">{title}</h3>
+              <p>{description}</p>
+              <p><strong>Technology:  </strong>{technology}</p>
+              <form action={link}>
+                  <input className="preview--btn" type="submit" value="Preview 🎏" />
+              </form>
+          </div>
+
+        </div>
+
     )
   }
 }
 class Projects extends Component {
   render() {
     return (
-      <div>
-        <h1 >Highlighted Projects</h1>
-        <div>
+      <div className="project" id="project">
+        <h2 className="title title--project">Featured Projects</h2>
+        <div className="portfolio">
           {
             PROJECTS.map(PROJECT => {
               return(
