@@ -32,26 +32,13 @@ linear-gradient(rgba(178, 207, 226, 0.5), rgba(178, 207, 226, 0.5))
         0.125em 0.125em 0.25em rgba(0,0,0,0.15);
 }
 
-<<<<<<< HEAD
 @media (min-width: 800px) {
   :root{
     --fs-h1: 4.25rem;
     --fs-h2: 3.25rem;
-    --fs-h3: 1.5rem;
+    --fs-h3: 1.25rem;
     --fs-body: 1.125rem;
   }
-=======
-.container {
-  font-family: 'Crimson Text', serif;
-  text-align: center;
-  font-size: 22px;
-  padding: 2.5%;
-  color: #001B3A;
-<<<<<<< HEAD
-		--color-headings: #3694FF;
-=======
->>>>>>> 4480015b8e18ce214ff05552c1a2ab840de1bdec
->>>>>>> 9328d9017db49c240913b984a446af6bdeea5f37
 }
 
 /* general styles */
