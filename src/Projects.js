@@ -10,7 +10,7 @@ class Project extends Component {
         <div className={ id % 2 == 0 ? "portfolio--item even" : "portfolio--item odd" }>
 
           <div className="img--portfolio">
-              <img src={image} style={{ opacity: 0.7, maxHeight: '100%' }} />
+              <img src={image} style={{ opacity: 0.7, width: '100%', height: '100%' }} />
           </div>
 
           <div className="content--portfolio">
