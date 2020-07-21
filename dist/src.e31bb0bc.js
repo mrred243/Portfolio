@@ -31759,15 +31759,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var PROJECTS = [{
   id: 1,
   title: 'Training Management Webpage',
-  description: 'A web allows users to review, manage their training schedule.',
+  description: 'A web helps users manage their training schedule.',
   technology: 'React, React Router',
   link: 'https://trainingweb.netlify.com/',
   image: _pj.default
 }, {
   id: 2,
   title: 'Spring Boot web',
-  description: 'A gym planner web with Springboot backend (username: admin, pw: admin)',
-  technology: 'Java, Springboot, MariaDB, Bootstrap',
+  description: 'A gym planner web with Springboot backend.',
+  technology: 'Java, Springboot, MariaDB',
   link: 'https://gymplanner243.herokuapp.com',
   image: _pj2.default
 }, {
@@ -31780,7 +31780,7 @@ var PROJECTS = [{
 }, {
   id: 4,
   title: 'Odd or Even',
-  description: 'A card game on web which was build by React and Redux',
+  description: 'A card-guessing game on web',
   technology: 'React, Redux',
   link: 'https://oddorevengame.netlify.app/',
   image: _pj4.default
@@ -31855,13 +31855,14 @@ var Project = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/_react.default.createElement("img", {
         src: image,
         style: {
-          opacity: 0.7
+          opacity: 0.7,
+          maxHeight: '100%'
         }
       })), /*#__PURE__*/_react.default.createElement("div", {
         className: "content--portfolio"
       }, /*#__PURE__*/_react.default.createElement("h3", {
         className: "title--portfolio"
-      }, title), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("strong", null, "Technology:  "), technology), /*#__PURE__*/_react.default.createElement("form", {
+      }, title), /*#__PURE__*/_react.default.createElement("p", null, description, /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("strong", null, "Technology:  "), technology), /*#__PURE__*/_react.default.createElement("form", {
         action: link
       }, /*#__PURE__*/_react.default.createElement("input", {
         className: "preview--btn",
@@ -32329,7 +32330,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54308" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55036" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

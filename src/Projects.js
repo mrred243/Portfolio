@@ -10,13 +10,14 @@ class Project extends Component {
         <div className={ id % 2 == 0 ? "portfolio--item even" : "portfolio--item odd" }>
 
           <div className="img--portfolio">
-              <img src={image} style={{ opacity: 0.7 }} />
+              <img src={image} style={{ opacity: 0.7, maxHeight: '100%' }} />
           </div>
 
           <div className="content--portfolio">
               <h3 className="title--portfolio">{title}</h3>
-              <p>{description}</p>
-              <p><strong>Technology:  </strong>{technology}</p>
+              <p>{description}<br/>
+                  <strong>Technology:  </strong>{technology}
+              </p>
               <form action={link}>
                   <input className="preview--btn" type="submit" value="Preview 🎏" />
               </form>

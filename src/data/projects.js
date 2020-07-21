@@ -6,7 +6,7 @@ import pj4 from '../asset/pj4.jpg';
 const PROJECTS = [{
     id: 1,
     title: 'Training Management Webpage',
-    description: 'A web allows users to review, manage their training schedule.',
+    description: 'A web helps users manage their training schedule.',
     technology:'React, React Router',
     link: 'https://trainingweb.netlify.com/',
     image: pj1
@@ -14,8 +14,8 @@ const PROJECTS = [{
   {
     id: 2,
     title: 'Spring Boot web',
-    description: 'A gym planner web with Springboot backend (username: admin, pw: admin)',
-    technology: 'Java, Springboot, MariaDB, Bootstrap',
+    description: 'A gym planner web with Springboot backend.',
+    technology: 'Java, Springboot, MariaDB',
     link: 'https://gymplanner243.herokuapp.com',
     image: pj2
   },
@@ -30,7 +30,7 @@ const PROJECTS = [{
   {
     id: 4,
     title: 'Odd or Even',
-    description: 'A card game on web which was build by React and Redux',
+    description: 'A card-guessing game on web',
     technology: 'React, Redux',
     link: 'https://oddorevengame.netlify.app/',
     image: pj4

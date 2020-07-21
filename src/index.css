@@ -14,7 +14,7 @@ linear-gradient(rgba(178, 207, 226, 0.5), rgba(178, 207, 226, 0.5))
   --ff-secondary: 'Amiri', serif;
 
   --fw-reg: 300;
-  --fw-bold: 900;
+  --fw-bold: 800;
 
   --clr-light: #FDFEFE;
   --clr-text: #001B3A;
@@ -45,6 +45,7 @@ linear-gradient(rgba(178, 207, 226, 0.5), rgba(178, 207, 226, 0.5))
 
 html {
   scroll-behavior: smooth;
+  font-size: 17px;
 }
 
 body {
@@ -100,7 +101,7 @@ img{
 .subtitle--intro {
    margin-bottom: 1em;
    background: var(--clr-accent2);
-   padding: 0.3em 1em;
+   padding: 0.5em 1.5em .4em 0;
 }
 
 /* header */
@@ -260,6 +261,7 @@ header {
       position:relative;
       left: -1.5em;
       width: calc(100% + 1.5em);
+      font-weight: var(--fw-reg);
     }
 }
     /* About section */
@@ -318,7 +320,8 @@ header {
     }
 
     .strength--other, .strength--main {
-      width: 45%;
+        width: 45%;
+        padding-left: 2em;
     }
 
     .subtitle--about {
@@ -357,9 +360,10 @@ header {
     .img--portfolio{
       grid-area: img;
       background-color: var(--clr-accent2);
+      height: auto;
     }
     .content--portfolio {
-      padding: 3em;
+      padding: 2em 1em;
       text-align: center;
     }
     .title--portfolio{
@@ -369,12 +373,12 @@ header {
     .preview--btn{
       padding: .3em .7em 0.4em .85em;
       font-family: var(--ff-primary);
-      font-size: 1.1em;
+      font-size: var(--fs-body);
       border-radius: 10px;
       background-color: rgba(178, 207, 226, 0.5) ;
       transition: all 700ms ;
       cursor: pointer;
-      box-shadow: 3px 6px 9px rgba(179,179,179,1);
+      box-shadow: var(--bs);
       outline: none;
       border: none;
             }
