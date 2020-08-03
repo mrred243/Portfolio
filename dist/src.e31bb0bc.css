@@ -99,7 +99,7 @@ img {
 .subtitle--intro {
   margin-bottom: 1em;
   background: var(--clr-accent2);
-  padding: 0.5em 1.5em 0.4em 0;
+  padding: 0.5em 0.8em 0.4em 1em;
 }
 
 /* header */
@@ -118,7 +118,7 @@ header {
   background: var(--clr-accent1);
   top: 0;
   bottom: 0;
-  left: 55%;
+  left: 65%;
   right: 0;
   z-index: 100;
   transform: translateX(100%);
@@ -262,7 +262,7 @@ header {
 }
 /* About section */
 .about {
-  padding: 0 5em;
+  padding: 0 2em;
 }
 
 .about--content {
@@ -281,7 +281,11 @@ header {
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+  .about {
+    padding: 0 5em;
+  }
+
   .about--content {
     display: grid;
     position: relative;
@@ -319,8 +323,6 @@ header {
 
   .strength--other,
   .strength--main {
-    width: 45%;
-    padding-left: 2em;
   }
 
   .subtitle--about {
@@ -331,7 +333,7 @@ header {
 /* Project section */
 
 .project {
-  padding: 0 5em;
+  padding: 0 2em;
 }
 
 .portfolio {
@@ -339,7 +341,10 @@ header {
   width: 85%;
 }
 
-@media (min-width: 600px){
+@media (min-width: 650px){
+  .project {
+    padding: 0 5em;
+  }
   .portfolio--item {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -388,7 +393,7 @@ header {
 
 /* contact section */
 .contact {
-  padding: 0 5em;
+  padding: 0 2em;
   margin-bottom: 5em;
 }
 
@@ -398,8 +403,19 @@ header {
   justify-content: space-evenly;
 }
 
+.contact--details{
+  margin-left: 1.5em;
+}
+
 .giphy-embed {
   top: -5em;
+}
+
+@media (min-width: 650px) {
+  .contact {
+    padding: 0 5em;
+    margin-bottom: 5em;
+  }
 }
 
 
