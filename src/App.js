@@ -32,23 +32,25 @@ const App = () => {
               <div className="strength--main">
                   <h3 className="specialty--item">Main Strength</h3>
                   <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
                       <li>JavaScript</li>
                       <li>React</li>
                       <li>Redux</li>
                       <li>React Native</li>
+                      <li>Flutter</li>
+
                   </ul>
               </div>
               <div className="strength--other">
                   <h3 className="specialty--item">Others</h3>
                   <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
                       <li>Java</li>
                       <li>Node.js</li>
                       <li>SQL</li>
                       <li>Vue</li>
                       <li>MariaDB + MongoDB</li>
-                      <li>Springboot</li>
+                      <li>Spring boot</li>
                       <li>Express</li>
                       <li>WordPress</li>
                   </ul>

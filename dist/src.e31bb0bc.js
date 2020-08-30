@@ -31738,6 +31738,8 @@ module.exports = "/pj2.8998fe5f.jpg";
 module.exports = "/pj3.b1ca54cd.jpg";
 },{}],"asset/pj4.jpg":[function(require,module,exports) {
 module.exports = "/pj4.bd7a7867.jpg";
+},{}],"asset/pj5.jpg":[function(require,module,exports) {
+module.exports = "/pj5.11326967.jpg";
 },{}],"data/projects.js":[function(require,module,exports) {
 "use strict";
 
@@ -31753,6 +31755,8 @@ var _pj2 = _interopRequireDefault(require("../asset/pj2.jpg"));
 var _pj3 = _interopRequireDefault(require("../asset/pj3.jpg"));
 
 var _pj4 = _interopRequireDefault(require("../asset/pj4.jpg"));
+
+var _pj5 = _interopRequireDefault(require("../asset/pj5.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31784,10 +31788,17 @@ var PROJECTS = [{
   technology: 'React, Redux',
   link: 'https://oddorevengame.netlify.app/',
   image: _pj4.default
+}, {
+  id: 5,
+  title: 'Weather Forecast',
+  description: 'Mobile app helps you find weather information of cities',
+  technology: 'Flutter',
+  link: 'https://github.com/mrred243/Flutter__WeatherForecast',
+  image: _pj5.default
 }];
 var _default = PROJECTS;
 exports.default = _default;
-},{"../asset/pj1.jpg":"asset/pj1.jpg","../asset/pj2.jpg":"asset/pj2.jpg","../asset/pj3.jpg":"asset/pj3.jpg","../asset/pj4.jpg":"asset/pj4.jpg"}],"Projects.js":[function(require,module,exports) {
+},{"../asset/pj1.jpg":"asset/pj1.jpg","../asset/pj2.jpg":"asset/pj2.jpg","../asset/pj3.jpg":"asset/pj3.jpg","../asset/pj4.jpg":"asset/pj4.jpg","../asset/pj5.jpg":"asset/pj5.jpg"}],"Projects.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32208,11 +32219,11 @@ var App = function App() {
     className: "strength--main"
   }, /*#__PURE__*/_react.default.createElement("h3", {
     className: "specialty--item"
-  }, "Main Strength"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "HTML"), /*#__PURE__*/_react.default.createElement("li", null, "CSS"), /*#__PURE__*/_react.default.createElement("li", null, "JavaScript"), /*#__PURE__*/_react.default.createElement("li", null, "React"), /*#__PURE__*/_react.default.createElement("li", null, "Redux"), /*#__PURE__*/_react.default.createElement("li", null, "React Native"))), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Main Strength"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "JavaScript"), /*#__PURE__*/_react.default.createElement("li", null, "React"), /*#__PURE__*/_react.default.createElement("li", null, "Redux"), /*#__PURE__*/_react.default.createElement("li", null, "React Native"), /*#__PURE__*/_react.default.createElement("li", null, "Flutter"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "strength--other"
   }, /*#__PURE__*/_react.default.createElement("h3", {
     className: "specialty--item"
-  }, "Others"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "Java"), /*#__PURE__*/_react.default.createElement("li", null, "Node.js"), /*#__PURE__*/_react.default.createElement("li", null, "SQL"), /*#__PURE__*/_react.default.createElement("li", null, "Vue"), /*#__PURE__*/_react.default.createElement("li", null, "MariaDB + MongoDB"), /*#__PURE__*/_react.default.createElement("li", null, "Springboot"), /*#__PURE__*/_react.default.createElement("li", null, "Express"), /*#__PURE__*/_react.default.createElement("li", null, "WordPress")))))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null));
+  }, "Others"), /*#__PURE__*/_react.default.createElement("ul", null, /*#__PURE__*/_react.default.createElement("li", null, "HTML"), /*#__PURE__*/_react.default.createElement("li", null, "CSS"), /*#__PURE__*/_react.default.createElement("li", null, "Java"), /*#__PURE__*/_react.default.createElement("li", null, "Node.js"), /*#__PURE__*/_react.default.createElement("li", null, "SQL"), /*#__PURE__*/_react.default.createElement("li", null, "Vue"), /*#__PURE__*/_react.default.createElement("li", null, "MariaDB + MongoDB"), /*#__PURE__*/_react.default.createElement("li", null, "Spring boot"), /*#__PURE__*/_react.default.createElement("li", null, "Express"), /*#__PURE__*/_react.default.createElement("li", null, "WordPress")))))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Projects.default, null), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_SocialProfiles.default, null));
 };
 
 var _default = App;
@@ -32331,7 +32342,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64521" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60083" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

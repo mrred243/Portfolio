@@ -2,6 +2,8 @@ import pj1 from '../asset/pj1.jpg';
 import pj2 from '../asset/pj2.jpg';
 import pj3 from '../asset/pj3.jpg';
 import pj4 from '../asset/pj4.jpg';
+import pj5 from '../asset/pj5.jpg';
+
 
 const PROJECTS = [{
     id: 1,
@@ -34,6 +36,14 @@ const PROJECTS = [{
     technology: 'React, Redux',
     link: 'https://oddorevengame.netlify.app/',
     image: pj4
-  }
+  },
+  {
+    id: 5,
+    title: 'Weather Forecast',
+    description: 'Mobile app helps you find weather information of cities',
+    technology: 'Flutter',
+    link: 'https://github.com/mrred243/Flutter__WeatherForecast',
+    image: pj5
+}
 ];
 export default PROJECTS;
