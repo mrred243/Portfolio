@@ -67,6 +67,7 @@ const App = () => {
           <hr />
 
           <SocialProfiles />
+          <a id='btn-to-top' href="#intro">⇧</a>
         </div>
       )
   }

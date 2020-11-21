@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependency directories
-/dist
 /yarn.lock
 
 # Optional cache
@@ -17,6 +16,8 @@
 
 # production
 /build
+/dist
+
 
 # misc
 .DS_Store

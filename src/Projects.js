@@ -18,7 +18,7 @@ class Project extends Component {
               <p>{description}<br/>
                   <strong>Technology:  </strong>{technology}
               </p>
-              <form action={link}>
+              <form action={link} target="_blank">
                   <input className="preview--btn" type="submit" value="Preview 🎏" />
               </form>
           </div>
