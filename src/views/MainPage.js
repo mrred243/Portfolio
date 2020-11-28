@@ -12,13 +12,15 @@ const MainPage = () => {
     
     return (
         <Fade bottom>
-          <Header />
-          <hr />
-          <About />
-          <hr />
-          <Projects />
-          <hr />
-          <SocialProfiles />
+          <div>
+            <Header />
+            <hr />
+            <About />
+            <hr />
+            <Projects />
+            <hr />
+            <SocialProfiles />
+          </div>
         </Fade>
     )
 }

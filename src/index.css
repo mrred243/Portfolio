@@ -454,7 +454,8 @@ header {
   cursor:pointer;
   color:#fff;
   font-family:var(--ff-primary);
-  font-weight:600
+  font-weight:600;
+  outline: none;
 }
 
 .intro__btn:after,
