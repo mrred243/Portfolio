@@ -55,6 +55,10 @@ body {
   line-height: 1.6;
 }
 
+html, body, #root {
+  height: 100%
+}
+
 strong {
   font-weight: var(--fw-bold);
 }

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import drawBlack from '../asset/drawBlack.png';
-
+import an from '../asset/an1.jpeg';
 
 
 const Header = () => {
@@ -14,6 +14,7 @@ const Header = () => {
 
 
 return(
+  <div>
   <header>
   <div className="logo">
     <img src={drawBlack} alt="logo" />
@@ -31,6 +32,12 @@ return(
     </ul>
   </nav>
   </header>
+  <div className="intro" id="intro">
+      <h1 className="title title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
+      <h3 className="subtitle subtitle--intro">A golden-rookie front-end dev from 🇻🇳</h3>
+      <img className="img--intro" src={an} alt="" />
+  </div>
+  </div>
 )
 }
 
