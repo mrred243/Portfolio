@@ -391,7 +391,7 @@ header {
 }
 
 .preview--btn:hover {
-  box-shadow: 1px 1px #5376ea, 2px 2px #5376ea, 3px 3px #5376ea, 4px 4px #5376ea;
+  box-shadow: 1px 1px #3e59b3, 2px 2px #3e59b3, 3px 3px #3e59b3, 4px 4px #3e59b3;
   transform: translateX(-4px);
 }
 
@@ -536,4 +536,9 @@ header {
   right:0;
   bottom:0;
   transition:background-color .2s ease-in
+}
+
+.cover {
+  background-image: url(./asset/coverpage.jpg);
+  background-size: cover;
 }

@@ -47,7 +47,7 @@ const PROJECTS = [
     title: 'APO Store (E-commerce)',
     description: 'An functional fashion e-commerce web store is made with WordPress and WooCommerce. SEO has been optimized',
     technology: 'WordPress, WooCommerce',
-    link: 'http://www.apoplanet.ga/',
+    link: 'https://www.apoplanet.ga/',
     image: pj6
   },
 

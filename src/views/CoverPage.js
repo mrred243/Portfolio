@@ -8,17 +8,19 @@ const CoverPage = () => {
 
     return (
         <div
-        style={{height: '100%', paddingLeft: 90, display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-          <h1 style={{marginBottom: 80}}>Welcome to Thien-An's portfilio</h1>
-          <div>
+        className="cover"
+        style={{height: '100%', padding: '90px 100px', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+            <h1>Welcome to Thien-An's portfolio</h1>
             <h2 style={{display: 'inline-block', marginRight: 30}}>But first, Have a nice day.</h2>
-            <button className="intro__btn" onClick={() => history.push(`/home`)}>
-            <div className="label">
-              <span className="hover-effect"></span>
-              <span className="label-text">Continue &nbsp;&nbsp;<span style={{fontSize: '1.1em'}}>❯❯❯</span></span>
-              </div>                  
-            </button>
-          </div>
+            <div>
+              <button className="intro__btn" onClick={() => history.push(`/home`)}>
+              <div className="label" >
+                <span className="hover-effect"></span>
+                <span className="label-text">Continue &nbsp;&nbsp;<span style={{fontSize: '1.1em'}}>❯❯❯</span></span>
+                </div>                  
+              </button>
+            </div>
+
         </div>
     );
 }
