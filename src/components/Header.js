@@ -19,7 +19,7 @@ return(
   <div className="logo">
     <img src={drawBlack} alt="logo" />
   </div>
-  <button className={navOpen ? "nav-toggle nav__open" : "nav-toggle"} onClick={toggleNav} aria-lable="toggle navigation">
+  <button className={navOpen ? "nav-toggle nav__open" : "nav-toggle"} onClick={() => toggleNav()} aria-lable="toggle navigation">
     <span className={navOpen ? "hamburger nav__open" : "hamburger"}></span>
   </button>
   <nav className={navOpen ? "nav nav__open" : "nav" }>

@@ -13,14 +13,14 @@ const PROJECTS = [
   {
     id: 1,
     title: 'Personal Portfolio',
-    description: 'My portfolio website has been built by React. It was designed in Minimalist style. You currently view this portfolio.',
+    description: 'My portfolio website has been built by React. It was designed in Minimalist style. It has a responsive web design. You currently view this portfolio.',
     technology: 'React, CSS',
     link: 'https://github.com/mrred243/Portfolio',
     image: portfolio
   },
   {
     id: 2,
-    title: 'Odd or Even',
+    title: 'Odds or Evens',
     description: 'A card-guessing game on web with Dark theme',
     technology: 'React, Redux',
     link: 'https://oddorevengame.netlify.app/',
@@ -29,15 +29,15 @@ const PROJECTS = [
   {
     id: 3,
     title: 'Music Mobile App',
-    description: 'Music Mobile App inspired by Spotify',
-    technology: 'React Native, third-party libraries',
+    description: 'Music Mobile App inspired by Spotify. It lets you search, play music and add your favorite artists to your list.',
+    technology: 'React Native, third-party UI libraries',
     link: 'https://github.com/mrred243/Favorite-Artists-App',
     image: pj3
   },
   {
     id: 4,
     title: 'Spring Boot Web',
-    description: 'A gym planner web with Springboot backend.',
+    description: 'A gym planner web  with Springboot backend. It authenticates users and shows contents based on user profile. Demo is hosted on Heroku. Default users: (user1: admin, password: admin), (user2: user, password: user).',
     technology: 'Java, Springboot, MariaDB',
     link: 'https://gymplanner243.herokuapp.com',
     image: pj2
