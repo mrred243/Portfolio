@@ -12,7 +12,7 @@ const About = () => {
           </p>
           <div className="specialty">
             <div className="strength--main">
-                <h3 className="specialty--item">Main Strength</h3>
+                <h3 className="specialty--item">Main Strengths</h3>
                 <ul>
                     <li>JavaScript</li>
                     <li>React</li>

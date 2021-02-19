@@ -7,9 +7,7 @@ const CoverPage = () => {
     const history = useHistory();
 
     return (
-        <div
-        className="cover"
-        style={{height: '100%', padding: '90px 100px', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+        <div className="cover">
             <h1>Welcome to Thien-An's portfolio</h1>
             <h2 style={{display: 'inline-block', marginRight: 30}}>But first, Have a nice day.</h2>
             <div>

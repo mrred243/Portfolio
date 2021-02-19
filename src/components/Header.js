@@ -14,12 +14,12 @@ const Header = () => {
 
 
 return(
-  <div>
+  <>
   <header>
   <div className="logo">
     <img src={drawBlack} alt="logo" />
   </div>
-  <button className={navOpen ? "nav-toggle nav__open" : "nav-toggle"} onClick={() => toggleNav()} aria-lable="toggle navigation">
+  <button className={navOpen ? "nav-toggle nav__open" : "nav-toggle"} onClick={() => toggleNav()} aria-label="toggle navigation">
     <span className={navOpen ? "hamburger nav__open" : "hamburger"}></span>
   </button>
   <nav className={navOpen ? "nav nav__open" : "nav" }>
@@ -37,7 +37,7 @@ return(
       <h3 className="subtitle subtitle--intro">A golden-rookie front-end dev from 🇻🇳</h3>
       <img className="img--intro" src={an} alt="" />
   </div>
-  </div>
+  </>
 )
 }
 
