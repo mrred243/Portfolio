@@ -15,7 +15,7 @@ const Header = () => {
 
 return(
   <>
-  <header>
+  <header id="home">
   <div className="logo">
     <img src={drawBlack} alt="logo" />
   </div>
@@ -24,7 +24,7 @@ return(
   </button>
   <nav className={navOpen ? "nav nav__open" : "nav" }>
     <ul className="nav__list">
-      <li className="nav__item"><a onClick={toggleNav} href="#intro" className="nav__link">Home</a></li>
+      <li className="nav__item"><a onClick={toggleNav} href="#home" className="nav__link">Home</a></li>
       <li className='nav__item'><a onClick={toggleNav} href="#about" className="nav__link">About</a></li>
       <li className='nav__item'><a onClick={toggleNav} href="#project" className="nav__link">Projects</a></li>
       <li className="nav__item"><a onClick={toggleNav} href="#contact" className="nav__link">Contact</a></li>
@@ -32,8 +32,8 @@ return(
     </ul>
   </nav>
   </header>
-  <div className="intro" id="intro">
-      <h1 className="title title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
+  <div className="intro">
+      <h1 className="title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
       <h3 className="subtitle subtitle--intro">A golden-rookie front-end dev from 🇻🇳</h3>
       <img className="img--intro" src={an} alt="" />
   </div>

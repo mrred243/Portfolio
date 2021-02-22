@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 const About = () => {
     return(
         <div className="about" id="about" >
-        <h2 className="title title--about">About me</h2><br/>
+        <h2 className="title title--about">About me</h2>
         <div className="about--content">
           <div className="img--about"></div>
           <p className="subtitle subtitle--about">Hello, I am <strong>Thien An Tran</strong>, a foreign student from Vietnam. I am studying <strong>Business and Information Technology</strong> at <strong>Haaga-Helia University</strong> in Helsinki, Finland.<br/>

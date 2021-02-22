@@ -6,9 +6,9 @@ class SocialProfile extends Component {
   render() {
     const {link, image} = this.props.socialProfile;
     return (
-      <span>
+      <div>
       <a href={link}><img src={image} alt='social-profile' style={{width: 35, height: 35, margin: 10}} /></a>
-      </span>
+      </div>
       )
   }
 }
@@ -16,9 +16,9 @@ class SocialProfiles extends Component {
   render() {
     return (
       <div className="contact" id="contact" style={{fontSize: '20px'}}>
-        <h2>Connect with me</h2>
+        <h2 className="title title__contact">Connect with me</h2>
         <div className="contact--section">
-          <iframe src="https://giphy.com/embed/WNPtFzVXA8fi8" width="350" height="200" frameBorder="0" className="giphy-embed"></iframe>
+          <iframe src="https://giphy.com/embed/WNPtFzVXA8fi8" frameBorder="0" className="giphy-embed"></iframe>
           <div className="contact--details">
             {
               SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
