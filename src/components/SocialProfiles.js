@@ -7,7 +7,7 @@ class SocialProfile extends Component {
     const {link, image} = this.props.socialProfile;
     return (
       <div>
-      <a href={link}><img src={image} alt='social-profile' style={{width: 35, height: 35}} /></a>
+      <a href={link}><img src={image} alt='social-profile' style={{width: 40, height: 40}} /></a>
       </div>
       )
   }

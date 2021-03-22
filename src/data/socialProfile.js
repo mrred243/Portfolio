@@ -1,6 +1,9 @@
 import emailIcon from '../asset/paper-plane.svg';
 import githubIcon from '../asset/github.svg';
-import linkedIcon from '../asset/linkedin.svg';
+import linkedInIcon from '../asset/linkedin.svg';
+import whatsAppIcon from '../asset/whatsapp.svg';
+
+
 
 const SOCIAL_PROFILES = [
   {
@@ -11,9 +14,13 @@ const SOCIAL_PROFILES = [
   {
     id: 2,
     link: 'https://linkedin.com/in/thien-an-tran-ba8296172',
-    image: linkedIcon,
+    image: linkedInIcon,
   },
-
+  {
+    id: 3,
+    link: 'https://linkedin.com/in/thien-an-tran-ba8296172',
+    image: whatsAppIcon,
+  },
 ];
 
 export default SOCIAL_PROFILES;
