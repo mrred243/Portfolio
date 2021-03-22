@@ -21,7 +21,7 @@ const PROJECTS = [
   {
     id: 2,
     title: 'Apo store',
-    description: 'A e-commerce website. You can use this mockup credit to make a test purchase (card number: 4242 4242 4242 4242, MM/YY: 04/24, CVC: 242, ZIP: 42424)',
+    description: 'A e-commerce website. You can use this mockup credit card to make a test purchase (card number: 4242 4242 4242 4242, MM/YY: 04/24, CVC: 242, ZIP: 42424)',
     technology:'React, React Router, MaterialUI, Commersejs',
     link: 'https://apostore.netlify.app/',
     image: pj1

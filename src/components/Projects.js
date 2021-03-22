@@ -16,7 +16,7 @@ class Project extends Component {
           <div className="content--portfolio">
               <h3 className="title--portfolio">{title}</h3>
               <p>{description}<br/>
-                  <strong>Technology:  </strong>{technology}
+                  <span style={{textDecoration: 'underline'}}>Technology:</span>  {technology}
               </p>
               <form action={link} target="_blank">
                   <input className="preview--btn" type="submit" value="Preview 🎏" />

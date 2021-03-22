@@ -9,7 +9,7 @@ const CoverPage = () => {
     return (
         <div className="cover">
             <h1>Welcome to Thien-An's portfolio</h1>
-            <h2 style={{display: 'inline-block', marginRight: 30}}>But first, Have a nice day.</h2>
+            <h2 style={{marginBottom: 20}}>But first, have a nice day.</h2>
             <div>
               <button className="intro__btn" onClick={() => history.push(`/home`)}>
               <div className="label" >
