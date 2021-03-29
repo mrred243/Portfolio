@@ -20,7 +20,7 @@ class SocialProfiles extends Component {
         <div className="contact--section">
           <iframe src="https://giphy.com/embed/WNPtFzVXA8fi8" frameBorder="0" className="giphy-embed"></iframe>
           <div className="contact--details">
-            <div style={{display: 'flex'}}>
+            <div style={{display: 'flex', marginBottom: 20}}>
             {
               SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
                 return <SocialProfile key={SOCIAL_PROFILE.id} socialProfile={SOCIAL_PROFILE} />

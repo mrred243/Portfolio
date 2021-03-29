@@ -9,18 +9,20 @@ class Project extends Component {
 
         <div className={ id % 2 == 0 ? "portfolio--item even" : "portfolio--item odd" }>
 
-          <div className="img--portfolio">
-              <img src={image} style={{ opacity: 0.7, width: '100%', height: '100%' }} />
+          <div className="portfolio--img" style={{backgroundImage: `url(${image})`}}>
           </div>
 
-          <div className="content--portfolio">
-              <h3 className="title--portfolio">{title}</h3>
-              <p>{description}<br/>
-                  <span style={{textDecoration: 'underline'}}>Technology:</span>  {technology}
-              </p>
-              <form action={link} target="_blank">
-                  <input className="preview--btn" type="submit" value="Preview 🎏" />
-              </form>
+          <div className="portfolio--content">
+              <h3 className="portfolio--title">{title}</h3>
+              <div className="portfolio--text">
+                <p>{description}</p>
+                <p style={{marginTop: 10}}><span style={{textDecoration: 'underline'}}>Technology</span>: {technology}</p>
+
+              </div>
+
+                <form action={link} target="_blank">
+                    <input className="preview--btn" type="submit" value="see this project 🎏" />
+                </form>
           </div>
 
         </div>
@@ -32,7 +34,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="project" id="project">
-        <h2 className="title title--project">Featured Projects</h2>
+        <h2 className="title title--project">Featured projects</h2>
         <div className="portfolio">
           {
             PROJECTS.map(PROJECT => {

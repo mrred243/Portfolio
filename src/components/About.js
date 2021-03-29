@@ -7,32 +7,41 @@ const About = () => {
         <h2 className="title title--about">About me</h2>
         <div className="about--content">
           <div className="img--about"></div>
-          <p className="subtitle subtitle--about">Hello, I am <strong>Thien An Tran</strong>, a foreign student from Vietnam. I am studying <strong>Business and Information Technology</strong> at <strong>Haaga-Helia University</strong> in Helsinki, Finland.<br/>
-          I am especially interested in <strong>meaningful</strong> and <strong>aesthetic</strong> projects.
-          </p>
+          <div className="subtitle subtitle--about">
+            <h3>Front-end and Mobile Development</h3>
+            <p>
+                I build responsive websites and mobile apps for an optimal user experience that achieves your business goals.
+            </p>
+            <h3>Design</h3>
+            <p>
+                I design beautiful and powerful websites for modern businesses. Any business today needs a website that wins customers’ trust and helps you do your business well. I make sure your website is up to that standard.
+            </p><br/>
+            <h3>Webflow Development</h3>
+            <p>
+                I build websites in Webflow where I can create responsive, powerful and fully custom websites. Plus, Webflow has an incredibly simple Content Editor for you and your team to edit website content quickly and easily.
+            </p>
+          </div>
           <div className="specialty">
             <div className="strength--main">
-                <h3 className="specialty--item">Main Strengths</h3>
+                <h3 className="specialty--title">Main Strengths</h3>
                 <ul>
                     <li>JavaScript</li>
                     <li>React</li>
-                    <li>Redux</li>
                     <li>React Native</li>
+                    <li>Webflow</li>
+                    <li>Figma</li>
+                    <li>Redux</li>
                     <li>Flutter</li>
-
                 </ul>
             </div>
             <div className="strength--other">
-                <h3 className="specialty--item">Others</h3>
+                <h3 className="specialty--title">Others</h3>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java</li>
+                    <li>HTML, CSS</li>
                     <li>Node.js</li>
                     <li>SQL</li>
-                    <li>Vue</li>
-                    <li>MariaDB + MongoDB</li>
-                    <li>Spring boot</li>
+                    <li>MariaDB</li>
+                    <li>Springboot</li>
                     <li>Express</li>
                     <li>WordPress</li>
                 </ul>

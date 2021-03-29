@@ -34,7 +34,7 @@ return(
   </header>
   <div className="intro">
       <h1 className="title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
-      <h3 className="subtitle subtitle--intro">A golden-rookie front-end dev from 🇻🇳</h3>
+      <p className="subtitle subtitle--intro">Front-end Dev and Web Designer from 🇻🇳</p>
       <img className="img--intro" src={an} alt="" />
   </div>
   </>
