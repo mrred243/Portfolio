@@ -29,7 +29,7 @@ const PROJECTS = [
   {
     id: 3,
     title: 'Odds or Evens',
-    description: 'A card-guessing web game with dark theme.',
+    description: 'A card-guessing web game. Players compete with others to break the high score.',
     technology: 'React, Redux',
     link: 'https://oddorevengame.netlify.app/',
     image: pj4
@@ -37,7 +37,7 @@ const PROJECTS = [
   {
     id: 4,
     title: 'Music Mobile App',
-    description: 'Music Mobile App inspired by Spotify. It lets you search, play music and add your favorite artists to your list.',
+    description: 'Music Mobile App inspired by Spotify. You can search, listen to music and add your favorite artists to your list.',
     technology: 'React Native, third-party UI libraries',
     link: 'https://github.com/mrred243/Favorite-Artists-App',
     image: pj3
@@ -45,7 +45,7 @@ const PROJECTS = [
   {
     id: 5,
     title: 'Gym Planner',
-    description: 'A gym planner web  with Springboot backend. It authenticates users and shows contents based on user profile. Default users: (user1: admin, password: admin; user2: user, password: user).',
+    description: 'A gym planner web  with Springboot backend. It authenticates users and shows contents based on user profile (user1: admin, password: admin; user2: user, password: user).',
     technology: 'Java, Springboot, MariaDB',
     link: 'https://gymplanner243.herokuapp.com',
     image: pj2
