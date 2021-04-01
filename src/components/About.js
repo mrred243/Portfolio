@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Fade from 'react-reveal/Fade';
+
 
 
 const About = () => {
@@ -8,18 +10,26 @@ const About = () => {
         <div className="about--content">
           <div className="img--about"></div>
           <div className="subtitle subtitle--about">
-            <h3 className="about--headline">Front-end and Mobile Development</h3>
-            <p>
-                I build responsive websites and mobile apps with optimal user experience that achieves your business goals.
-            </p>
-            <h3 className="about--headline">Design</h3>
-            <p>
-                I design beautiful and powerful websites for modern businesses. Any business today needs a website that wins customers’ trust and helps you do your business well. I make sure your website is up to that standard.
-            </p>
-            <h3 className="about--headline">Webflow Development</h3>
-            <p>
-                I build websites in Webflow where I can create responsive, powerful and fully custom websites. Plus, Webflow has an incredibly simple Content Editor for you and your team to edit website content quickly and easily.
-            </p>
+            <Fade right cascade>
+            <div>
+                <h3 className="about--headline">Front-end and Mobile Development</h3>
+                <p>
+                    I build responsive websites and mobile apps with optimal user experience that achieves your business goals.
+                </p>
+            </div>
+            <div>
+                <h3 className="about--headline">Design</h3>
+                <p>
+                    I design beautiful and powerful websites for modern businesses. Any business today needs a website that wins customers’ trust and helps you do your business well. I make sure your website is up to that standard.
+                </p>
+            </div>
+            <div>
+                <h3 className="about--headline">Webflow Development</h3>
+                <p>
+                    I build websites in Webflow where I can create responsive, powerful and fully custom websites. Plus, Webflow has an incredibly simple Content Editor for you and your team to edit website content quickly and easily.
+                </p>
+            </div>
+            </Fade>
           </div>
         </div>
         <div className="specialty">

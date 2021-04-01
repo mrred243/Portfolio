@@ -11,9 +11,10 @@ import Fade from 'react-reveal/Fade';
 const MainPage = () => {
     
     return (
-        <Fade bottom>
           <div>
+            <Fade bottom>
             <Header />
+            </Fade>
             <hr />
             <About />
             <hr />
@@ -21,7 +22,6 @@ const MainPage = () => {
             <hr />
             <SocialProfiles />
           </div>
-        </Fade>
     )
 }
 
