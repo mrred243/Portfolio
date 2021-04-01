@@ -305,6 +305,7 @@ header {
 /* About section */
 .about {
   padding: 1em 2em 0;
+  z-index: -1;
 }
 
 .about--content {
