@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import drawBlack from '../asset/drawBlack.png';
 import an from '../asset/an1.jpeg';
+import Fade from 'react-reveal/Fade';
 
 
 const Header = () => {
@@ -32,11 +33,13 @@ return(
     </ul>
   </nav>
   </header>
-  <div className="intro">
-      <h1 className="title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
-      <p className="subtitle subtitle--intro">Front-end Dev and Web Designer from 🇻🇳</p>
-      <img className="img--intro" src={an} alt="" />
-  </div>
+      <Fade bottom >
+        <div className="intro">
+          <h1 className="title--intro">Hi, I am <strong>Thien An Tran</strong></h1>
+          <p className="subtitle subtitle--intro">Front-end Dev and Web Designer from 🇻🇳</p>
+          <img className="img--intro" src={an} alt="" />
+        </div>
+      </Fade>
   </>
 )
 }

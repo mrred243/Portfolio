@@ -9,8 +9,8 @@ const About = () => {
         <h2 className="title title--about">My specialty</h2>
         <div className="about--content">
           <div className="img--about"></div>
+          <Fade right cascade>
           <div className="subtitle subtitle--about">
-            <Fade right cascade>
             <div>
                 <h3 className="about--headline">Front-end and Mobile Development</h3>
                 <p>
@@ -29,8 +29,8 @@ const About = () => {
                     I build websites in Webflow where I can create responsive, powerful and fully custom websites. Plus, Webflow has an incredibly simple Content Editor for you and your team to edit website content quickly and easily.
                 </p>
             </div>
-            </Fade>
           </div>
+          </Fade>
         </div>
         <div className="specialty">
             <div className="strength--main">

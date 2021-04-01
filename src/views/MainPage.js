@@ -12,9 +12,7 @@ const MainPage = () => {
     
     return (
           <div>
-            <Fade bottom>
             <Header />
-            </Fade>
             <hr />
             <About />
             <hr />
