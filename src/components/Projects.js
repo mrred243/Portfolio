@@ -3,7 +3,7 @@ import PROJECTS from '../data/projects';
 
 class Project extends Component {
 	render() {
-		const { title, image, description, link, id, technology } =
+		const { title, image, description, repoURL, demoURL, id, technology } =
 			this.props.project;
 		return (
 			<div
@@ -25,14 +25,31 @@ class Project extends Component {
 							: {technology}
 						</p>
 					</div>
-
-					<form action={link} target='_blank'>
-						<input
-							className='preview--btn'
-							type='submit'
-							value='see this project 🎏'
-						/>
-					</form>
+					<div style={{display: 'flex', justifyContent:'center'}}>
+						{demoURL ? (
+							<form action={demoURL} target='_blank'>
+								<input
+									className='preview--btn'
+									type='submit'
+									value='Demo'
+								/>
+							</form>
+						) : null}
+						{repoURL && Array.isArray(repoURL)
+							? repoURL.map((url, i) => {
+									const btnValue = `Github ${i + 1}`
+									return (
+										<form style={demoURL ? {marginLeft: 10} : {marginLeft: 0}}key={i} action={url} target='_blank'>
+											<input
+												className='preview--btn'
+												type='submit'
+												value={repoURL.length === 1 ? 'Github' : btnValue}
+											/>
+										</form>
+									);
+							  })
+							: null}
+					</div>
 				</div>
 			</div>
 		);

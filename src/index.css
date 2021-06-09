@@ -417,6 +417,9 @@ header {
 .portfolio--content {
 	padding: 2em 0em;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .portfolio--title {
@@ -426,7 +429,7 @@ header {
 }
 
 .preview--btn {
-	padding: 0.5em 1em 0.7em 1.2em;
+	padding: 0.5em 1.2em 0.6em 1.2em;
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
 	border-radius: 30px;
