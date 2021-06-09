@@ -15,7 +15,7 @@ const PROJECTS = [
 		description:
 			'This A Full Stack MERN App The App.It allows users to post interesting destinations and interact with posts of others. It has Google and backend authentication.(test user: 1@gmail.com, pw: 123123',
 		technology: 'React, Redux, Node.Js, Express, MongoDB',
-		link: 'destination4everyone.netlify.app',
+		link: 'https://destination4everyone.netlify.app',
 		image: destination,
 	},
 	{
