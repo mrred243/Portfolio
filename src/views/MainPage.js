@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 const MainPage = () => {
 	return (
-		<div>
+		<div className='container'>
 			<Header />
 			<hr />
 			<About />
