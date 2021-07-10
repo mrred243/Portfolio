@@ -10,7 +10,7 @@ class SocialProfile extends Component {
 					<img
 						src={image}
 						alt='social-profile'
-						style={{ width: 40, height: 40 }}
+						className='social-img'
 					/>
 				</a>
 			</div>
@@ -20,7 +20,7 @@ class SocialProfile extends Component {
 class SocialProfiles extends Component {
 	render() {
 		return (
-			<div className='contact' id='contact' style={{ fontSize: '20px' }}>
+			<div className='contact' id='contact'>
 				<h2 className='title title__contact'>Connect with me</h2>
 				<div className='contact--section'>
 					<iframe
@@ -28,8 +28,8 @@ class SocialProfiles extends Component {
 						frameBorder='0'
 						className='giphy-embed'></iframe>
 					<div className='contact--details'>
-						<div style={{ display: 'flex', marginBottom: 20 }}>
-							{SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
+						<div className='social-wrapper'>
+							{SOCIAL_PROFILES.map((SOCIAL_PROFILE) => {
 								return (
 									<SocialProfile
 										key={SOCIAL_PROFILE.id}

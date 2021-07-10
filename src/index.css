@@ -50,7 +50,9 @@ html {
 body {
 	background: var(--clr-light);
 	color: var(--clr-text);
+
 	margin: 0;
+
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
 	line-height: 1.8;
@@ -86,8 +88,9 @@ h4,
 h5 {
 	font-family: var(--ff-secondary);
 	line-height: 1;
-	margin: 0;
 	color: rgba(0, 0, 0, 0.75);
+
+	margin: 0;
 }
 
 h1 {
@@ -146,25 +149,30 @@ header {
 
 .nav {
 	position: fixed;
-	background: var(--clr-accent2);
 	top: 0;
 	right: 0;
 	left: 50%;
 	z-index: 100;
+
 	height: 100vh;
-	transform: translateX(100%);
+
+	background: var(--clr-accent2);
 	box-shadow: var(--bs);
+
+	transform: translateX(100%);
 	transition: transform 600ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .nav__list {
 	list-style: none;
-	display: flex;
+
 	height: 100%;
-	flex-direction: column;
-	justify-content: space-evenly;
 	margin: 0 auto;
 	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -172,6 +180,7 @@ header {
 	color: inherit;
 	font-size: var(--fs-h2);
 	text-decoration: none;
+
 	transition: color 600ms ease;
 }
 
@@ -180,14 +189,17 @@ header {
 }
 
 .nav-toggle {
-	padding: 1em 0.7em 2em 0.7em;
-	background: transparent;
-	border: 0;
 	position: fixed;
 	right: 1em;
-	z-index: 1000;
 	top: 3em;
+
+	padding: 1em 0.7em 2em 0.7em;
+	z-index: 1000;
+
+	border: 0;
 	outline: none;
+
+	background: transparent;
 }
 
 @media (min-width: 650px) {
@@ -240,9 +252,11 @@ header {
 .hamburger,
 .hamburger::before {
 	background: var(--clr-text);
+
 	width: 2.5em;
 	height: 3px;
 	border-radius: 0.2em;
+
 	transition: transform 400ms ease-in;
 }
 
@@ -287,6 +301,7 @@ header {
 		display: grid;
 		width: max-content;
 		margin: 0 auto;
+
 		grid-column-gap: 1em;
 		grid-template-areas:
 			'img title'
@@ -294,19 +309,22 @@ header {
 		grid-template-columns: min-content max-content;
 	}
 	.img--intro {
-		grid-area: img;
 		min-width: 250px;
 		position: relative;
 		z-index: 2;
+
+		grid-area: img;
 	}
 	.subtitle--intro {
-		align-self: start;
-		grid-column: -1/1;
-		grid-row: 2;
-		text-align: right;
 		position: relative;
+		align-self: start;
 		left: -1.5em;
 		width: calc(100% + 1.5em);
+
+		grid-column: -1/1;
+		grid-row: 2;
+
+		text-align: right;
 		font-weight: var(--fw-reg);
 	}
 }
@@ -319,17 +337,19 @@ header {
 .about--content {
 	display: block;
 	position: relative;
-	max-width: 100%;
 	margin: 0 auto;
+	max-width: 100%;
+
 	grid-column-gap: 2em;
 }
 
 .img--about {
-	min-height: 300px;
 	background: url('./asset/about.jpg');
 	background-size: cover;
 	background-position: center;
+
 	margin-bottom: 2em;
+	min-height: 300px;
 }
 
 .about--headline {
@@ -368,6 +388,7 @@ header {
 		position: relative;
 		max-width: 100%;
 		margin: 0 auto;
+
 		grid-column-gap: 2em;
 		grid-template-areas: 'img content ';
 		grid-template-columns: min-content auto;
@@ -380,9 +401,10 @@ header {
 
 	.img--about {
 		min-width: 300px;
-		grid-area: img;
 		position: relative;
 		margin-bottom: 0;
+
+		grid-area: img;
 	}
 
 	.specialty--title {
@@ -409,22 +431,25 @@ header {
 .portfolio--img {
 	background-position: center;
 	background-size: cover;
-	min-height: 200px;
 	background-repeat: no-repeat;
+
+	min-height: 200px;
 }
 
 .portfolio--text {
 	text-align: left;
+
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
 
 .portfolio--content {
 	padding: 2em 0em;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+
+	text-align: center;
 }
 
 .portfolio--title {
@@ -435,20 +460,29 @@ header {
 
 .preview--btn {
 	padding: 0.5em 1.2em 0.6em 1.2em;
+	border-radius: 30px;
+
 	font-family: var(--ff-primary);
 	font-size: var(--fs-body);
-	border-radius: 30px;
-	background-color: rgba(178, 207, 226, 0.5);
-	transition: all 0.4s ease-in-out;
+
 	cursor: pointer;
+
 	outline: none;
 	border: none;
+
+	transition: all 0.4s ease-in-out;
+
+	background-color: rgba(178, 207, 226, 0.5);
 }
 
 .preview--btn:hover {
 	box-shadow: 1px 1px #3e59b3, 2px 2px #3e59b3, 3px 3px #3e59b3,
 		4px 4px #3e59b3, 6px 6px #3e59b3;
 	transform: translateX(-5px);
+}
+.portfolio--item--link {
+	display: flex;
+	justify-content: center;
 }
 
 @media (min-width: 650px) {
@@ -494,6 +528,7 @@ header {
 /* contact section */
 .contact {
 	padding: 1em 2em 4em;
+	font-size: 20px;
 }
 
 .contact--section {
@@ -511,6 +546,14 @@ header {
 	padding-right: 15px;
 }
 
+.social-img {
+	width: 40px;
+	height: 40px;
+}
+.social-wrapper {
+	display: flex;
+	margin-bottom: 20px;
+}
 @media (min-width: 850px) {
 	.contact {
 		padding: 0 15% 5em;
@@ -525,29 +568,34 @@ header {
 .intro__btn {
 	position: relative;
 	display: inline-block;
-	font-size: 0.8em;
 	padding: 0.5rem;
 	border: 0;
+	outline: none;
+
+	font-size: 0.8em;
 	text-transform: uppercase;
-	background-color: transparent;
-	cursor: pointer;
 	color: #fff;
 	font-family: var(--ff-primary);
 	font-weight: 600;
-	outline: none;
 	letter-spacing: 3px;
+
+	background-color: transparent;
+
+	cursor: pointer;
 }
 
 .intro__btn:after,
 .intro__btn:before {
-	background-color: transparent;
 	content: '';
+
 	display: block;
 	position: absolute;
 	height: calc(50% - 0.4rem);
 	width: 100%;
 	border: 2px solid var(--clr-text);
 	left: 0;
+
+	background-color: transparent;
 }
 
 .intro__btn:before {
@@ -577,9 +625,11 @@ header {
 
 .label {
 	position: relative;
-	overflow: hidden;
 	margin: 0;
+
 	background-color: rgba(0, 0, 0, 0.8);
+
+	overflow: hidden;
 }
 
 .label:before {
@@ -601,7 +651,9 @@ header {
 	top: 0;
 	left: -5%;
 	z-index: 1;
+
 	background-color: #86a8bd;
+
 	transform: translateX(-102%) skew(-20deg);
 	transition: -webkit-transform 0.6s ease-out;
 	transition: transform 0.7s ease-out;
@@ -615,28 +667,33 @@ header {
 	position: relative;
 	display: block;
 	padding: 0.8rem 1rem;
-	background-color: transparent;
 	z-index: 1;
+
+	background-color: transparent;
 }
 
 .label-text:after {
 	content: '';
+
 	display: block;
 	position: absolute;
 	height: 0.6rem;
 	width: 0.6rem;
 	right: 0;
 	bottom: 0;
+
 	transition: background-color 0.2s ease-in;
 }
 
 .cover {
 	background-image: url(./asset/coverpage.jpg);
 	background-size: cover;
+	background-position: center;
+
 	height: 100vh;
 	padding: 5vh 1em;
+
 	color: var(--clr-text);
-	background-position: center;
 }
 
 .cover h1 {

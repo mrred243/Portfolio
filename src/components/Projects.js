@@ -3,8 +3,16 @@ import PROJECTS from '../data/projects';
 
 class Project extends Component {
 	render() {
-		const { title, image, description, repoURL, demoURL, id, technology } =
-			this.props.project;
+		const {
+			title,
+			image,
+			description,
+			repoURL,
+			demoURL,
+			id,
+			technology,
+			test,
+		} = this.props.project;
 		return (
 			<div
 				className={
@@ -18,14 +26,23 @@ class Project extends Component {
 					<h3 className='portfolio--title'>{title}</h3>
 					<div className='portfolio--text'>
 						<p>{description}</p>
+						{test ? (
+							<p>
+								<span style={{ textDecoration: 'underline' }}>
+									Default
+								</span>{' '}
+								: {test}
+							</p>
+						) : null}
+
 						<p style={{ marginTop: 10 }}>
 							<span style={{ textDecoration: 'underline' }}>
 								Technology
-							</span>
+							</span>{' '}
 							: {technology}
 						</p>
 					</div>
-					<div style={{display: 'flex', justifyContent:'center'}}>
+					<div className='portfolio--item--link'>
 						{demoURL ? (
 							<form action={demoURL} target='_blank'>
 								<input
@@ -37,13 +54,25 @@ class Project extends Component {
 						) : null}
 						{repoURL && Array.isArray(repoURL)
 							? repoURL.map((url, i) => {
-									const btnValue = `Github ${i + 1}`
+									const btnValue = `Github ${i + 1}`;
 									return (
-										<form style={demoURL ? {marginLeft: 10} : {marginLeft: 0}}key={i} action={url} target='_blank'>
+										<form
+											style={
+												demoURL
+													? { marginLeft: 10 }
+													: { marginLeft: 0 }
+											}
+											key={i}
+											action={url}
+											target='_blank'>
 											<input
 												className='preview--btn'
 												type='submit'
-												value={repoURL.length === 1 ? 'Github' : btnValue}
+												value={
+													repoURL.length === 1
+														? 'Github'
+														: btnValue
+												}
 											/>
 										</form>
 									);
@@ -61,7 +90,7 @@ class Projects extends Component {
 			<div className='project' id='project'>
 				<h2 className='title title--project'>Featured projects</h2>
 				<div className='portfolio'>
-					{PROJECTS.map(PROJECT => {
+					{PROJECTS.map((PROJECT) => {
 						return <Project key={PROJECT.id} project={PROJECT} />;
 					})}
 				</div>
